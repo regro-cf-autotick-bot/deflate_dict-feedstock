@@ -1,5 +1,5 @@
 {% set name = "deflate_dict" %}
-{% set version = "1.0.11" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deflate_dict-{{ version }}.tar.gz
-  sha256: 07f0c57960070e8460d84271f03291f7dcf56a12dd68c9831a270cf76aa6f42a
+  sha256: a51f72562a2056118c6b0915b4ac46a483cc329b43d13d759307e4c027ea20ea
 
 build:
   noarch: python
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
     - support_developer >=1.0.2
